@@ -4,7 +4,7 @@ document.getElementById('formContrato').addEventListener('submit', function (e) 
   const form = this;
   const formData = new FormData(form);
 
-  fetch('http://localhost:3000/upload', {
+  fetch('https://backend-contratos.onrender.com', {
     method: 'POST',
     body: formData
   })
