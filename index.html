@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Contratos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastro de Contratos</h1>
+    <form id="formContrato" enctype="multipart/form-data">
+      <label for="fornecedor">Fornecedor:</label>
+      <input type="text" id="fornecedor" name="fornecedor" required>
+
+      <label for="dataInicio">Data de Início:</label>
+      <input type="date" id="dataInicio" name="dataInicio" required>
+
+      <label for="dataValidade">Data de Validade:</label>
+      <input type="date" id="dataValidade" name="dataValidade" required>
+
+      <label for="arquivoContrato">Arquivo do contrato (PDF):</label>
+      <input type="file" id="arquivoContrato" name="arquivoContrato" accept="application/pdf" required>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
